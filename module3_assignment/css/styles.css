@@ -84,4 +84,37 @@ body {
   clear: both;
   margin-top: -30px;
 }
+
+.sub_title 
+{ 
+  position: relative;
+  top:-1px;
+  right: -1px;
+  
+  float: right;
+  border: 1px solid black;
+  
+  width: 150px;
+  
+  padding: 5px;
+  padding-right: 5px;
+  text-align: right;
+
+  font-size: 120%;
+  font-weight: bold;
+  font-family: Helvetica;
+  color: #ffffff;
+}
+
+#sub_title1 {
+  background-color: #336666;
+}
+
+#sub_title2 {
+  background-color: #336600;
+}
+
+#sub_title3 {
+  background-color: #660066;
+}
 /* END HEADER */
