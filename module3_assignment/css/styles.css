@@ -107,8 +107,9 @@ body {
 .sub_title 
 { 
   position: relative;
-  top:0px;
-  right: 0px;
+  top:-1px;
+  right: -1px;
+  left: -1px;
   
   float: right;
   border: none;
