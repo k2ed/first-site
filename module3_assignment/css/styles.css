@@ -136,4 +136,12 @@ body {
 #sub_title3 {
   background-color: #660066;
 }
+p {
+  border: none;
+  font-family: Helvetica;
+  color: #111111;
+  font-size: 100%;
+  padding: 10px;
+  padding-top: 40px;
+}
 /* END HEADER */
