@@ -1,14 +1,13 @@
 body {
   font-size: 16px;
-  color: #fff;
-  background-color: #eeeeee;
-  font-family: 'Cedarville Cursive', cursive;
+  color: #222;
+  background-color: #ffffff;
+  font-family: 'Overpass', sans-serif;
 }
 
 /** HEADER **/
 #header-nav {
   background-color: #eaeaea;
-  height: 80px;
   border-radius: 0;
   border: 0;
 }
@@ -26,65 +25,41 @@ body {
 
 .navbar-brand h1 { /* Restaurant name */
   font-family: 'Cedarville Cursive', cursive;
-  color: #8ec623;
-  font-size: 2em;
-  text-transform:capitalize;;
-  font-weight:300;
+  color: #f48342;
+  font-size: 1.8em;
+  text-transform:capitalize;
+  font-weight:200;
   font-style: italic;
-  text-shadow: 1px 1px 1px #444444;
-  margin-top: 0;
+  /*text-shadow: 1px 1px 1px #dddddd;*/
+  margin-top: 10px;
   margin-bottom: 0;
-  line-height: .75;
+  line-height: 0;
 }
 .navbar-brand a:hover, .navbar-brand a:focus {
   text-decoration: none;
-}
-.navbar-brand p { /* Kosher cert */
-  color: #000;
-  text-transform: uppercase;
-  font-size: .7em;
-  margin-top: 15px;
 }
 .navbar-brand p span { /* Star-K */
   vertical-align: middle;
 }
 
-
 #nav-list {
   margin-top: 10px;
-}
-#nav-list a {
-  color: #951C49;
+  color: #db5406;
   text-align: center;
 }
+#nav-list a {
+  color: #db5406;
+  text-align: center;
+  background: #ddd;
+}
 #nav-list a:hover {
-  background: #E7E7E7;
+  background: #888;
+  color: #eee;
+  text-align: center;
 }
 #nav-list a span {
   font-size: 1.8em;
 }
-
-#phone {
-  margin-top: 5px;
-}
-#phone a { /* Phone number */
-  text-align: right;
-  padding-bottom: 0;
-}
-#phone div { /* We Deliver */
-  color: #557c3e;
-  text-align: right;
-  padding-right: 15px;
-}
-
-.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-  border: 1px solid #61122f;
-}
-.navbar-header button.navbar-toggle {
-  clear: both;
-  margin-top: -30px;
-}
-
 
 .box_outer
 { 
@@ -97,29 +72,32 @@ body {
 
 .box_1
 { 
-  background-color: #eeeeee;
+  background-color: #e5ffff;
   position: relative;
   border: none;
   width: 100%;
   height: 100%;
+  margin-bottom:10px;
 }
 
 .box_2
 { 
-  background-color: #eeeeee;
+  background-color: #eefce0;
   position: relative;
   border: none;
   width: 100%;
   height: 100%;
-}
+  margin-bottom:10px;
+  }
 
 .box_3
 { 
-  background-color: #eeeeee;
+  background-color: #ffedff;
   position: relative;
   border: none;
   width: 100%;
   height: 100%;
+  margin-bottom:10px;
 }
 
 .sub_title 
@@ -137,8 +115,8 @@ body {
   padding-right: 5px;
   text-align: right;
 
-  font-size: 120%;
-  font-weight: bold;
+  font-size: 100%;
+  font-weight: normal;
   font-family: Helvetica;
   color: #ffffff;
 }
@@ -154,12 +132,27 @@ body {
 #sub_title3 {
   background-color: #660066;
 }
+
+#sub_title4 {
+  background-color: #660000;
+}
+
 p {
   border: none;
+  font-family: 'Overpass', sans-serif;
+  color: #111111;
+  font-size: 75%;
+  padding: 10px;
+  padding-top:40px;
+  margin: 0px;
+}
+
+footer {
+  border: none;
+  text-align: center;
   font-family: Helvetica;
   color: #111111;
-  font-size: 100%;
+  font-size: 70%;
   padding: 10px;
-  padding-top: 40px;
 }
 /* END HEADER */
