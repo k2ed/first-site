@@ -25,6 +25,9 @@ var dc = {};
 
 var homeHtml = "snippets/home-snippet.html";
 
+var allCategoriesUrl =
+  "https://davids-restaurant.herokuapp.com/categories.json";
+
 // Convenience function for inserting innerHTML for 'select'
 var insertHtml = function (selector, html) {
   var targetElem = document.querySelector(selector);
@@ -43,15 +46,22 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 // On first load, show home view
 showLoading("#main-content");
+
 $ajaxUtils.sendGetRequest(
   homeHtml,
   function (responseText) {
-    document.querySelector("#main-content")
-      .innerHTML = responseText;
+    document.querySelector("#main-content").innerHTML = responseText;
   },
   false);
 });
 
+// Load the menu categories view
+dc.loadMenuCategories = function () {
+  showLoading("#main-content");
+  $ajaxUtils.sendGetRequest(
+    allCategoriesUrl,
+    buildAndShowCategoriesHTML);
+};
 
 global.$dc = dc;
 
