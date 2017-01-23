@@ -84,13 +84,7 @@ $ajaxUtils.sendGetRequest(
   false);
 });
 
-// Load the menu categories view
-dc.loadMenuCategories = function () {
-  showLoading("#main-content");
-  $ajaxUtils.sendGetRequest(
-    allCategoriesUrl,
-    buildAndShowCategoriesHTML);
-};
+
 
 
 // Load the menu items view
