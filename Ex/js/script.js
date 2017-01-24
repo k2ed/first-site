@@ -48,9 +48,10 @@ $ajaxUtils.sendGetRequest(
   function (responseText) {
     document.querySelector("#main-content")
       .innerHTML = responseText;
+    console.log(responseText);
   },
   false);
-console.log(responseText);
+
 });
 
 global.$dc = dc;
