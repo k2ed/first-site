@@ -31,7 +31,6 @@ var insertHtml = function (selector, html) {
   targetElem.innerHTML = html;
 };
 
-  console.log(insertHtml);
 // Show loading icon inside element identified by 'selector'.
 var showLoading = function (selector) {
   var html = "<div class='text-center'>";
@@ -51,6 +50,7 @@ $ajaxUtils.sendGetRequest(
       .innerHTML = responseText;
   },
   false);
+console.log(responseText);
 });
 
 global.$dc = dc;
