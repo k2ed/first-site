@@ -105,9 +105,8 @@ function buildAndShowHomeHTML (categories) {
 
 	  var chosenCategoryName = chooseRandomCategory(categories);
 	  var ic = "'";
-	  var chosenCategoryShortName = null;
+	  var chosenCategoryShortName = ic;
 	  
-	  chosenCategoryShortName += ic;
 	  chosenCategoryShortName += chosenCategoryName.short_name;
 	  chosenCategoryShortName += ic;
 	  
