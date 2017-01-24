@@ -51,7 +51,7 @@ $ajaxUtils.sendGetRequest(
   },
   false);
 });
-
+console.log(dc);
 
 global.$dc = dc;
 
