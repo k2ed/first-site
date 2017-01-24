@@ -24,8 +24,7 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...
 var dc = {};
 
 var homeHtml = "snippets/home-snippet.html";
-var allCategoriesUrl =
-  "https://davids-restaurant.herokuapp.com/categories.json";
+var allCategoriesUrl = "https://davids-restaurant.herokuapp.com/categories.json";
 var categoriesTitleHtml = "snippets/categories-title-snippet.html";
 var categoryHtml = "snippets/category-snippet.html";
 
@@ -105,7 +104,9 @@ function buildCategoriesViewHtml(categories,
                                  categoryHtml) {
 
   var finalHtml = categoriesTitleHtml;
-  finalHtml += "<section class='row'>";
+	console.log(categoriesTitleHtml);
+	
+	finalHtml += "<section class='row'>";
 
   // Loop over categories
   for (var i = 0; i < categories.length; i++) {
