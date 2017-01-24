@@ -110,9 +110,6 @@ function buildAndShowHomeHTML (categories) {
 	  chosenCategoryShortName += chosenCategoryName.short_name;
 	  chosenCategoryShortName += ic;
 	  
-	  console.log(chosenCategoryShortName);
-
-
       // TODO: STEP 3: Substitute {{randomCategoryShortName}} in the home html snippet with the
       // chosen category from STEP 2. Use existing insertProperty function for that purpose.
       // Look through this code for an example of how to do use the insertProperty function.
@@ -127,7 +124,6 @@ function buildAndShowHomeHTML (categories) {
 	  
 	  
        var homeHtmlToInsertIntoMainPage = insertProperty(homeHtml,"randomCategoryShortName",chosenCategoryShortName);
-	   console.log(homeHtmlToInsertIntoMainPage);
 	   
 	   insertHtml("#main-content", homeHtmlToInsertIntoMainPage);
 
